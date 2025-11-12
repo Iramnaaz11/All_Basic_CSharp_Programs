@@ -10,22 +10,20 @@ namespace All_Basic_Programs
     {
         static void Main()
         {
-            Console.Write("Enter a String you want to : ");
-            string str = Console.ReadLine();
-            string rev = "";
+            {
+                Console.Write("Enter a string 1 : ");
+                string str = Console.ReadLine();
 
-            for (int i = str.Length - 1; i >= 0; i--)
-            {
-                rev += str[i];
-            }
-            if (rev.ToLower() == str.ToLower())
-            {
-                Console.WriteLine("Entered string is a palindrome");
-            }
-            else
-            {
-                Console.WriteLine("Entered string is not a palindrome");
+                if (IsPalindrome(str))
+                    Console.WriteLine("String is Palindrome");
+                else Console.WriteLine("String is not Palindrome");
             }
         }
+        static bool IsPalindrome(string str)
+        {
+            str = str.ToLower();
+            return str.SequenceEqual(str.Reverse());
+        }
     }
-}
+}   
+

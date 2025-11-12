@@ -35,9 +35,7 @@
   <PropertyGroup>
     <StartupObject>All_Basic_Programs.Program</StartupObject>
   </PropertyGroup>
-  <PropertyGroup>
-    <NoWin32Manifest>true</NoWin32Manifest>
-  </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Palindrome\PalindromeCheckUsingFor_String.cs" />
+    <Compile Include="Palindrome\PalindromeCheck_Using_SequenceEqual.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Palindrome\PalindromeCheck.cs" />
     <Compile Include="Palindrome\PalindromeCheckForInt.cs" />
