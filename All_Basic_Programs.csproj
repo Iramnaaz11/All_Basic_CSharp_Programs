@@ -53,6 +53,12 @@
     <Compile Include="Palindrome\PalindromeCheck.cs" />
     <Compile Include="Palindrome\PalindromeCheckForInt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReverseString\ReverseString_Using_For.cs" />
+    <Compile Include="ReverseString\UsingCharAndArrayReverse.cs" />
+    <Compile Include="ReverseString\Using_foreach.cs" />
+    <Compile Include="ReverseString\Using_Linq.cs" />
+    <Compile Include="ReverseString\Using_Recursion.cs" />
+    <Compile Include="ReverseString\Using_StringBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace All_Basic_Programs
+namespace All_Basic_Programs.ReverseString
 {
-    class Program
+    internal class Using_Recursion
     {
         static void Main()
 
@@ -26,5 +26,3 @@ namespace All_Basic_Programs
         }
     }
 }
- 
-
