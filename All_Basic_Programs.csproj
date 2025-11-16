@@ -47,6 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fibonacci_Series\Using_For_Loop.cs" />
+    <Compile Include="Fibonacci_Series\Using_Recursion.cs" />
+    <Compile Include="Fibonacci_Series\Using_While_Loop.cs" />
     <Compile Include="Palindrome\PalindromeCheckUsingFor_String.cs" />
     <Compile Include="Palindrome\PalindromeCheck_Using_SequenceEqual.cs" />
     <Compile Include="Program.cs" />
@@ -63,5 +66,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

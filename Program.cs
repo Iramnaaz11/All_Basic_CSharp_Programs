@@ -8,21 +8,25 @@ namespace All_Basic_Programs
 {
     class Program
     {
-        static void Main()
-
+        static int Fib(int n)
         {
-            Console.Write("Enter a string : ");
-            string rev = Console.ReadLine();
 
-            string Reverse(string s)
+            if (n <= 1)
+                return n;
+            return Fib(n - 1) + Fib(n - 2);
+        }
+
+        static void Main()
+        {
+            Console.Write("Enter the number : ");
+            int n = int.Parse(Console.ReadLine());
+
+            Console.Write("Fibonacci Series : ");
+
+            for (int i = 0; i <= n; i++)
             {
-                if (s.Length <= 1)
-                    return s;
-
-                return Reverse(s.Substring(1)) + s[0];
+                Console.Write(Fib(i) + " ");
             }
-
-            Console.WriteLine("Reversed string is : " + Reverse(rev));
         }
     }
 }
