@@ -1,0 +1,21 @@
+using System;
+
+class Vowels {
+    static void Main(){
+        
+        Console.Write("Enter a name :");
+        string str = (Console.ReadLine());
+        
+        string vowels = "aeiou";
+        int count = 0;
+        
+        Console.WriteLine("vowels : ");
+        foreach(char c in str){
+            if(vowels.Contains(c)){
+                Console.WriteLine( c );
+                count++;
+               
+            }
+        } Console.WriteLine("Count : " + count);
+    }
+}
