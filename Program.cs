@@ -1,34 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace All_Basic_Programs
 {
-    class Program
+    internal class Program
     {
-        static int Fib(int n)
-        {
-
-            if (n <= 1)
-                return n;
-            return Fib(n - 1) + Fib(n - 2);
-        }
-
         static void Main()
         {
-            Console.Write("Enter the number : ");
-            int n = int.Parse(Console.ReadLine());
+            int a = 10, b = 20;
 
-            Console.Write("Fibonacci Series : ");
+            a = a + b;
+            b = a - b;
+            a = a - b;
 
-            for (int i = 0; i <= n; i++)
-            {
-                Console.Write(Fib(i) + " ");
-            }
+            Console.WriteLine("Before swapping :  a = 10 , b = 20  After swapping :  " + "a = " + a + ", b = " + b);
         }
-    }
-}
- 
 
+    }
+
+}
