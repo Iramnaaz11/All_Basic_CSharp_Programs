@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+
 
 namespace All_Basic_Programs
 {
@@ -8,15 +7,29 @@ namespace All_Basic_Programs
     {
         static void Main()
         {
-            int a = 10, b = 20;
+            Console.WriteLine("Enter a number : ");
+            int num = int.Parse(Console.ReadLine());
 
-            a = a + b;
-            b = a - b;
-            a = a - b;
+            int rev = 0;
+            int temp = num;
 
-            Console.WriteLine("Before swapping :  a = 10 , b = 20  After swapping :  " + "a = " + a + ", b = " + b);
+            while (num > 0)
+            {
+                int digit = num % 10;
+                rev = rev * 10 + digit;
+                num = num / 10;
+
+            }
+                if (rev == temp)
+                {
+                    Console.WriteLine("Entered number is Palindrome");
+                }
+                else
+                {
+                    Console.WriteLine("Entered number is not a Palindrome");
+                }
+
+            }
         }
-
     }
 
-}
